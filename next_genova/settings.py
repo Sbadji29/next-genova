@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'genova',
 ]
 
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
