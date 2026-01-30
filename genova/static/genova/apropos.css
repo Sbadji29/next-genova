@@ -1,0 +1,56 @@
+/* ================= ABOUT MODERNIZATION ================= */
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-text-box .intro {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: var(--primary-dark);
+    margin-bottom: 25px;
+    font-weight: 500;
+    overflow-wrap: break-word;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.about-card {
+    display: flex;
+    padding: 25px;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap; /* Prevent icon/text clipping on small screens */
+}
+
+@media (max-width: 480px) {
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.card-icon-wrapper img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.about-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--primary);
+    overflow-wrap: break-word;
+}
+
+.about-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin: 0;
+    overflow-wrap: break-word;
+}
